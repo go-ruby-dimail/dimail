@@ -30,13 +30,46 @@ usable as a standalone Go library — a sibling of `go-ruby-regexp/regexp` and
   `loong64`, `ppc64le` and `s390x`.
 - **100 % test coverage**, race-clean, enforced in CI.
 
-## Install
+## Usage from Ruby
+
+This is the Ruby gem's core: under rbgo, `require "dimail"` gives you a
+`Dimail::Client` whose snake_case methods are the API operations, returning Ruby
+Hashes and Arrays. See [`examples/`](examples) for runnable scripts and the full
+surface contract.
+
+```ruby
+require "dimail"
+
+client = Dimail::Client.new(basic_auth: ["apiuser", "apipass"])
+client.login
+
+domain = client.get_domain("example.gouv.fr")   # => Hash
+puts domain["state"]
+
+client.get_domains.each { |d| puts d["name"] }   # => Array<Hash>
+
+client.post_mailbox_v2("example.gouv.fr", "jean.dupont",
+                       { "features" => ["ox"] })
+
+begin
+  client.get_domain("absent.example")
+rescue Dimail::APIError => e
+  warn "not found" if e.not_found?
+end
+```
+
+The `require "dimail"` binding lives in rbgo (a thin `method_missing` shim over
+the `Session` below); it is pending in that repo. The operation names in the
+examples are checked against the real generated API by a Go test in this package,
+so they cannot drift.
+
+## Install (Go)
 
 ```sh
 go get github.com/go-ruby-dimail/dimail
 ```
 
-## Usage
+## Usage from Go
 
 ```go
 package main
