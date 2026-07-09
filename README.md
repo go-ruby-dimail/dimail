@@ -1,3 +1,5 @@
+<p align="center"><img src="https://raw.githubusercontent.com/go-ruby-dimail/brand/main/social.png" alt="go-ruby-dimail" width="720"></p>
+
 # go-ruby-dimail
 
 [![ci](https://github.com/go-ruby-dimail/dimail/actions/workflows/ci.yml/badge.svg)](https://github.com/go-ruby-dimail/dimail/actions/workflows/ci.yml)
