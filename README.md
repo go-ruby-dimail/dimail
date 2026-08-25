@@ -4,7 +4,6 @@
 
 [![ci](https://github.com/go-ruby-dimail/dimail/actions/workflows/ci.yml/badge.svg)](https://github.com/go-ruby-dimail/dimail/actions/workflows/ci.yml)
 [![Go Reference](https://pkg.go.dev/badge/github.com/go-ruby-dimail/dimail.svg)](https://pkg.go.dev/github.com/go-ruby-dimail/dimail)
-[![Go Report Card](https://goreportcard.com/badge/github.com/go-ruby-dimail/dimail)](https://goreportcard.com/report/github.com/go-ruby-dimail/dimail)
 
 The pure-Go, Ruby-runtime-independent core of the Ruby **`dimail`** gem — a
 client for the **Dimail API** of the French government's *La Suite numérique*
