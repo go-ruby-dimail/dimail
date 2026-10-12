@@ -1,2 +1,4 @@
 github.com/go-dimail/dimail v0.0.0-20260830120648-da6ab737a0fd h1:6FPF7WKCm5nF2Sd8obV0bmjo2QFnUvyn8ZYMr4aMmOE=
 github.com/go-dimail/dimail v0.0.0-20260830120648-da6ab737a0fd/go.mod h1:V2fynyZcka5bHsMDZVsdb2uIbclnGjCCUB6lnsND+q8=
+github.com/go-dimail/dimail v0.0.0-20261010193740-34b6a545d8d1 h1:6WGy96TDkgEdDFjIYTkidbCwYLMz89N4N4/5PBuVDH0=
+github.com/go-dimail/dimail v0.0.0-20261010193740-34b6a545d8d1/go.mod h1:tMhfgs8YuaiUm7SrZAm7+96LahnorGG3btsqbYz8OgY=
